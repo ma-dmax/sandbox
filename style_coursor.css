@@ -1,0 +1,13 @@
+*{
+    cursor: none;
+}
+.cursor{
+  position: fixed;         
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: rgb(255,153,0);
+  pointer-events: none;    
+  transform: translate(-50%,-50%);
+  transition: opacity .35s ease;
+}
