@@ -1,13 +1,31 @@
-*{
+/**{
     cursor: none;
+}*/
+
+.cursor{
+  position: fixed;
+  left: 0; top: 0;
+  width: 1.5rem; height: 1.5rem;
+  border-radius: 50%;
+  background: rgb(212, 92, 11);
+  pointer-events: none;
+  transform: translate(var(--x, -9999px), var(--y, -9999px)) translate(-50%,-50%);
 }
+/*
 .cursor{
   position: fixed;         
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
-  background: rgb(255,153,0);
+  background: rgb(212, 92, 11);
   pointer-events: none;    
   transform: translate(-50%,-50%);
   transition: opacity .35s ease;
+}
+*/
+.c2{
+  opacity: 45%!important;
+}
+.c3{
+  opacity: 15%!important;
 }
