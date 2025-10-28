@@ -9,7 +9,11 @@
   border-radius: 50%;
   background: rgb(212, 92, 11);
   pointer-events: none;
-  transform: translate(var(--x, -9999px), var(--y, -9999px)) translate(-50%,-50%);
+  /*transform: translate(var(--x, -9999px), var(--y, -9999px)) translate(-50%,-50%);*/
+  transform:
+  translate(var(--x), var(--y))
+  translate(-50%, -50%)
+  scale(var(--s, 1));
 }
 /*
 .cursor{
@@ -22,10 +26,10 @@
   transform: translate(-50%,-50%);
   transition: opacity .35s ease;
 }
-*/
+*//*
 .c2{
   opacity: 45%!important;
 }
 .c3{
   opacity: 15%!important;
-}
+}*/
