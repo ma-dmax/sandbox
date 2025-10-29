@@ -1,6 +1,9 @@
-/**{
+*{
     cursor: none;
-}*/
+}
+body{
+  height: 500vh;
+}
 
 .cursor{
   position: fixed;
@@ -9,27 +12,54 @@
   border-radius: 50%;
   background: rgb(212, 92, 11);
   pointer-events: none;
-  /*transform: translate(var(--x, -9999px), var(--y, -9999px)) translate(-50%,-50%);*/
   transform:
   translate(var(--x), var(--y))
   translate(-50%, -50%)
   scale(var(--s, 1));
 }
-/*
-.cursor{
-  position: fixed;         
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 50%;
-  background: rgb(212, 92, 11);
-  pointer-events: none;    
-  transform: translate(-50%,-50%);
-  transition: opacity .35s ease;
+
+.form_container {
+  position: fixed;
+  right: 15px;
+  top: 25px;
+  display: grid;
+  gap: 10px;
+  max-width: 275px;
+  padding: 10px;
+  border: 1px solid;
+  color: #000;
+  border-radius: 5px;
+  border: 1px solid #629da7;
+  background-color: #87d6e4;
+  opacity: 85%;
 }
-*//*
-.c2{
-  opacity: 45%!important;
+.form_container div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
 }
-.c3{
-  opacity: 15%!important;
-}*/
+
+.form_container p {
+  margin: 0;
+}
+
+.form_container input {
+  width: 40px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid #0e0d0d;
+  padding: 0px;
+
+}
+input[type="color"] {
+  width: 42px;
+  height: 22px;
+  padding: 0;
+
+  cursor: pointer;
+}
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 5px;
+  border: 1px solid #888;
+}

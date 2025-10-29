@@ -8,12 +8,16 @@
   
 </head>
 <body>
-  <!--<div class="cursor"></div>
-  <div class="cursor c2"></div>
-  <div class="cursor c3"></div>-->
-  <main>
-    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur et vel, voluptate odio corrupti suscipit eveniet harum modi deleniti fugit exercitationem accusamus hic neque placeat quos tenetur porro, sunt earum.</h1>
-  </main>
+ <div class="form_container">
+  <div><p>Count</p>          <input type="number" data-key="count"         value="8"></div>
+  <div><p>Interval</p>       <input type="number" data-key="interval"      value="12"></div>
+  <div><p>Size (rem)</p>     <input type="number" data-key="sizeRem"       step="0.1" value="1.5"></div>
+  <div><p>Color</p>          <input type="color"  data-key="color"         value="#d45c0b"></div>
+  <div><p>Opacity start</p>  <input type="number" data-key="opacityStart"  step="0.01" value="1">
+       <p>Opacity end</p>    <input type="number" data-key="opacityEnd"    step="0.01" value="0.15"></div>
+  <div><p>Scale start</p>    <input type="number" data-key="scaleStart"    step="0.01" value="1">
+       <p>Scale end</p>      <input type="number" data-key="scaleEnd"      step="0.01" value="0.8"></div>
+</div>
 </body>
 <script src="cursor.js" defer></script>
 </html>
